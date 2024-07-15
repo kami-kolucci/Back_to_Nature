@@ -52,6 +52,24 @@ nav a {
   height: 100vh;
   width: 100vw;
 }
+
+/* ****** burger - wrapper */
+
+.burger-wrapper {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.burger-inside {
+  background-color: var(--primary-color);
+  height: 5px;
+  width: 40px;
+  margin: 6px;
+  border-radius: 10px;
+}
+
 /* ******* search-button *******/
 .button {
   display: flex;
@@ -64,7 +82,7 @@ nav a {
 .search-button,
 .search-button-green {
   display: flex;
-  /* margin: 3rem 0rem 5rem 37rem; */
+
   padding: 1rem 3rem 1rem 3rem;
   width: 17rem;
   background-color: var(--second-color);
@@ -78,17 +96,16 @@ nav a {
 .search-icon {
   width: 25px;
   height: 25px;
-  /* margin-right: 1.6rem; */
 }
 
 .search-button-green {
   background-color: var(--forth-color);
+  color: var(--second-color);
 }
 
 /* ********** information ******** */
 
 .title-information {
-  /* padding-top: 10rem; */
   font-size: 3rem;
   text-align: center;
 }
@@ -137,8 +154,10 @@ nav a {
 
 .vector-information {
   position: absolute;
+
   top: 56rem;
   left: -14rem;
+  z-index: 1;
   height: 65vh;
 }
 
@@ -388,4 +407,210 @@ footer .footer-logo {
 .impressum a {
   text-decoration: none;
   color: var(--primary-color);
+}
+
+/*  ****** media queries */
+/* ************************ */
+/* ******* tablet media queries */
+
+@media only screen and (max-width: 992px) {
+  nav a {
+    display: none;
+  }
+
+  .burger-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-logo {
+    padding-right: 27rem;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .text-information {
+    width: 90vw;
+    padding: 2rem 0rem 0rem 7rem;
+  }
+
+  .vector-information {
+    position: relative;
+    top: -60rem;
+    left: 7rem;
+    width: 75vw;
+    height: 75vh;
+  }
+
+  .box-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    row-gap: 3rem;
+    padding: 2rem 16rem 0rem 1rem;
+  }
+
+  .box-information div {
+    width: 15rem;
+    height: 20rem;
+    margin-left: 19rem;
+  }
+
+  .camper-button {
+    margin: -30rem 10rem -8rem 14rem;
+  }
+
+  .title-prices {
+    padding-left: 4rem;
+  }
+
+  .text-prices {
+    padding: 2rem 0rem 2rem 20rem;
+  }
+
+  .prices-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 4rem;
+  }
+
+  .van-box {
+    width: 20rem;
+    margin-top: 0rem;
+  }
+
+  footer {
+    padding-top: 70rem;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5rem;
+  }
+
+  .impressum {
+    padding-left: 4rem;
+  }
+
+  .social-media {
+    padding-left: 5rem;
+  }
+
+  footer .footer-logo {
+    padding-left: 28rem;
+  }
+
+  .vector-bottom {
+    position: relative;
+    left: 10rem;
+    top: -50rem;
+    width: 70vw;
+  }
+}
+
+/* ******* mobile media queries */
+
+@media only screen and (max-width: 768px) {
+  nav a {
+    display: none;
+  }
+
+  .burger-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15rem;
+    width: 90vw;
+  }
+
+  .title-information {
+    padding-left: 8rem;
+  }
+
+  .text-information {
+    width: 90vw;
+    padding: 3rem 0rem 0rem 7rem;
+  }
+
+  .vector-information {
+    position: relative;
+    top: -60rem;
+    left: 7rem;
+    width: 75vw;
+    height: 75vh;
+  }
+
+  .box-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    row-gap: 3rem;
+    padding: 2rem 16rem 0rem 1rem;
+  }
+
+  .box-information div {
+    width: 15rem;
+    height: 20rem;
+  }
+
+  .camper-button {
+    margin: -29rem 0rem -8rem 14rem;
+  }
+
+  .text-prices {
+    padding: 2rem 0rem 2rem 12rem;
+  }
+
+  .prices-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1rem;
+  }
+
+  .van-box {
+    width: 20rem;
+    margin-top: 0rem;
+  }
+
+  footer {
+    padding-top: 70rem;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-logo {
+    padding-left: 13rem;
+  }
+
+  .vector-bottom {
+    position: relative;
+    left: 10rem;
+    top: -50rem;
+    width: 70vw;
+  }
 }
