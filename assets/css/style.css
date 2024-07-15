@@ -61,33 +61,29 @@ nav a {
   margin: 0rem 5rem 0rem 0rem;
 }
 
-.search-button, .search-button-green {
-    display: flex;
-    /* margin: 3rem 0rem 5rem 37rem; */
-    padding: 1rem 3rem 1rem 3rem;
-    width: 17rem;
-    background-color: var(--second-color);
-    color: var(--primary-color);
-    font-size: 1rem;
-    font-weight: 700;
-    border-radius: 30px;
-    gap: 2rem;
+.search-button,
+.search-button-green {
+  display: flex;
+  /* margin: 3rem 0rem 5rem 37rem; */
+  padding: 1rem 3rem 1rem 3rem;
+  width: 17rem;
+  background-color: var(--second-color);
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  gap: 2rem;
 }
 
-
 .search-icon {
-    width: 25px;
-    height: 25px;
-    /* margin-right: 1.6rem; */
-  }
+  width: 25px;
+  height: 25px;
+  /* margin-right: 1.6rem; */
+}
 
-  .search-button-green {
-    background-color: var(--forth-color);
-    
-  }
-
-
-
+.search-button-green {
+  background-color: var(--forth-color);
+}
 
 /* ********** information ******** */
 
